@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="piniaGradientFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#42b883;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#35495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="16" cy="16" r="15" fill="url(#piniaGradientFav)"/>
+  
+  <!-- Pinia 图标 - 简化版 -->
+  <g transform="translate(16,16)">
+    <!-- 菠萝主体 -->
+    <ellipse cx="0" cy="2" rx="6" ry="8" fill="#ffd700"/>
+    
+    <!-- 菠萝纹理 -->
+    <path d="M-4,-2 L4,-2 M-3,0 L3,0 M-4,2 L4,2 M-3,4 L3,4 M-2,6 L2,6" 
+          stroke="#ff8c00" stroke-width="0.5" opacity="0.7"/>
+    
+    <!-- 菠萝叶子 -->
+    <path d="M-3,-6 Q-1,-9 0,-7 Q1,-9 3,-6 Q1,-7 0,-6 Q-1,-7 -3,-6" 
+          fill="#42b883"/>
+    
+    <!-- 中心点 -->
+    <circle cx="0" cy="2" r="1" fill="#ff8c00"/>
+  </g>
+</svg>

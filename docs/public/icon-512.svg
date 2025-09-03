@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="piniaGradient512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#42b883;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#35495e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="highlight512" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+    <filter id="shadow512">
+      <feDropShadow dx="4" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="256" cy="256" r="240" fill="url(#piniaGradient512)" filter="url(#shadow512)"/>
+  <circle cx="256" cy="256" r="240" fill="url(#highlight512)"/>
+  
+  <!-- Pinia 图标 -->
+  <g transform="translate(256,256)">
+    <!-- 菠萝主体 -->
+    <ellipse cx="0" cy="20" rx="75" ry="100" fill="#ffd700" stroke="#ff8c00" stroke-width="4"/>
+    
+    <!-- 菠萝纹理 -->
+    <g stroke="#ff8c00" stroke-width="3" opacity="0.7">
+      <path d="M-50,-20 L50,-20"/>
+      <path d="M-40,-5 L40,-5"/>
+      <path d="M-50,10 L50,10"/>
+      <path d="M-40,25 L40,25"/>
+      <path d="M-50,40 L50,40"/>
+      <path d="M-40,55 L40,55"/>
+      <path d="M-30,70 L30,70"/>
+      <path d="M-20,85 L20,85"/>
+    </g>
+    
+    <!-- 菠萝叶子 -->
+    <path d="M-40,-75 Q-20,-120 0,-95 Q20,-120 40,-75 Q20,-85 0,-75 Q-20,-85 -40,-75" 
+          fill="#42b883" stroke="#35495e" stroke-width="3"/>
+    
+    <!-- 额外叶子细节 -->
+    <path d="M-25,-85 Q-10,-105 0,-90 Q10,-105 25,-85" 
+          fill="#4ade80" stroke="#35495e" stroke-width="2" opacity="0.8"/>
+    
+    <!-- 中心装饰 -->
+    <circle cx="0" cy="20" r="8" fill="#ff8c00" opacity="0.8"/>
+    <circle cx="0" cy="20" r="4" fill="#ffa500"/>
+  </g>
+  
+  <!-- 文字标识 -->
+  <text x="256" y="420" font-family="Arial, sans-serif" font-size="64" font-weight="bold" 
+        text-anchor="middle" fill="#fff" opacity="0.9">Pinia</text>
+</svg>

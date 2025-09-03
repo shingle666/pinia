@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="piniaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#42b883;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#35495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆形 -->
+  <circle cx="50" cy="50" r="45" fill="url(#piniaGradient)" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Pinia 图标 - 简化的菠萝形状 -->
+  <g transform="translate(50,50)">
+    <!-- 菠萝主体 -->
+    <ellipse cx="0" cy="5" rx="15" ry="20" fill="#ffd700" stroke="#ff8c00" stroke-width="1"/>
+    
+    <!-- 菠萝纹理 -->
+    <path d="M-10,-5 L10,-5 M-8,0 L8,0 M-10,5 L10,5 M-8,10 L8,10 M-6,15 L6,15" 
+          stroke="#ff8c00" stroke-width="1" opacity="0.7"/>
+    
+    <!-- 菠萝叶子 -->
+    <path d="M-8,-15 Q-5,-25 0,-20 Q5,-25 8,-15 Q5,-18 0,-15 Q-5,-18 -8,-15" 
+          fill="#42b883" stroke="#35495e" stroke-width="1"/>
+    
+    <!-- 中心点 -->
+    <circle cx="0" cy="5" r="2" fill="#ff8c00"/>
+  </g>
+  
+  <!-- 文字 P -->
+  <text x="50" y="75" font-family="Arial, sans-serif" font-size="16" font-weight="bold" 
+        text-anchor="middle" fill="#fff">P</text>
+</svg>

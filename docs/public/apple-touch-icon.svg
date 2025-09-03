@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="piniaGradientApple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#42b883;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#35495e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadowApple">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- 圆角矩形背景 (Apple 风格) -->
+  <rect x="10" y="10" width="160" height="160" rx="32" ry="32" 
+        fill="url(#piniaGradientApple)" filter="url(#shadowApple)"/>
+  
+  <!-- Pinia 图标 -->
+  <g transform="translate(90,90)">
+    <!-- 菠萝主体 -->
+    <ellipse cx="0" cy="5" rx="25" ry="35" fill="#ffd700" stroke="#ff8c00" stroke-width="2"/>
+    
+    <!-- 菠萝纹理 -->
+    <path d="M-16,-8 L16,-8 M-13,0 L13,0 M-16,8 L16,8 M-13,16 L13,16 M-10,24 L10,24" 
+          stroke="#ff8c00" stroke-width="1.5" opacity="0.7"/>
+    
+    <!-- 菠萝叶子 -->
+    <path d="M-13,-25 Q-7,-40 0,-32 Q7,-40 13,-25 Q7,-30 0,-25 Q-7,-30 -13,-25" 
+          fill="#42b883" stroke="#35495e" stroke-width="1.5"/>
+    
+    <!-- 中心装饰 -->
+    <circle cx="0" cy="5" r="2.5" fill="#ff8c00" opacity="0.8"/>
+  </g>
+  
+  <!-- 底部文字 -->
+  <text x="90" y="140" font-family="-apple-system, BlinkMacSystemFont, sans-serif" 
+        font-size="16" font-weight="600" text-anchor="middle" fill="#fff" opacity="0.9">Pinia</text>
+</svg>
