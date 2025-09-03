@@ -60,8 +60,8 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/shingle666/allfun.net.git
-cd allfun.net
+git clone https://github.com/shingle666/pinia.git
+cd pinia
 
 # 安装依赖
 npm install
