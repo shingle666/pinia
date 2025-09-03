@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
   title: 'Pinia Study Guide',
   description: 'The intuitive store for Vue.js - Complete learning guide',
