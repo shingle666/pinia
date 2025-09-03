@@ -118,9 +118,9 @@ interface PiniaDevtools {
 
 ### SSR 相关 API
 
-- [`createPinia()`](./ssr#create-pinia) - 服务端创建 Pinia 实例
-- [`pinia.state.value`](./ssr#state-serialization) - 状态序列化
-- [`setActivePinia()`](./ssr#set-active-pinia) - 设置服务端 Pinia 实例
+- [`createPinia()`](./create-pinia) - 服务端创建 Pinia 实例
+- [`pinia.state.value`](./state-serialization) - 状态序列化
+- [`setActivePinia()`](./set-active-pinia) - 设置服务端 Pinia 实例
 
 ## 迁移助手
 
